@@ -47,8 +47,6 @@ class HomePage(TemplateView):
 
 			send_mail.delay(**params)
 
-
-
 			return JsonResponse({'message': 'Email sent'})
 		
 		except Exception as e:
