@@ -8,8 +8,7 @@ from datetime import datetime, timedelta
 from django.template.context import Context
 from django.core.mail import EmailMultiAlternatives
 
-import requests 
-from bs4 import BeautifulSoup
+import requests
 from urllib.request import urlopen
 
 		
