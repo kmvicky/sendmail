@@ -56,7 +56,7 @@ EMAIL_PORT = 1025
 # Celery
 # ------------------------------------------------------------------------------
 # http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-always-eager
-CELERY_TASK_ALWAYS_EAGER = True
+CELERY_TASK_ALWAYS_EAGER = False
 # http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-eager-propagates
 # CELERY_TASK_EAGER_PROPAGATES = True
 # Your stuff...
