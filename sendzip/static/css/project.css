@@ -1,0 +1,31 @@
+/* These styles are generated from project.scss. */
+
+.alert-debug {
+  color: black;
+  background-color: white;
+  border-color: #d6e9c6;
+}
+
+.alert-error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+.ui.attached.menu {
+	height:65px; 
+	margin-top:0;
+	background-color: #2b699d; 
+}
+
+.container {
+	margin-top: 80px;
+}
+
+.ui.grid, .ui.form, .result, .error {
+	margin: 20px;
+}
+
+.result {
+	margin: 20px;
+}

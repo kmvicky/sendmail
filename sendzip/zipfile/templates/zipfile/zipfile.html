@@ -1,0 +1,45 @@
+{% extends "zipfile/base.html" %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block content %}
+
+	<div class="ui grid">
+		<div class="four wide column">
+			<li class="item">
+				Multiple urls should be provided as comma(,) separated
+			</li>
+
+			<li class="item">
+				If you want to use api then hit at localhost:8000/
+			</li>
+		</div>
+
+		<div class="twelve wide column">
+			
+			<form class="ui form" action="{{action}}" method="post">
+
+				<div class="required field">
+					<label>Urls</label>
+					<input type="text" name="urls">
+				</div>
+
+				<div class="required field">
+					<label>Email</label>
+					<input type="text" name="email">
+				</div>
+
+				<div class="field">
+					{% csrf_token %}
+					<input type="submit" class="ui tiny uppercase positive action submit button" value="Save">
+				</div>
+			</form>
+
+			<h5 class="error"></h5>
+			
+		</div>
+	</div>
+	
+{% endblock %}
