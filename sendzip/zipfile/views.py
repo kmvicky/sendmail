@@ -44,10 +44,12 @@ class HomePage(TemplateView):
 				'urls': urls,
 				'email': email
 			}
-			
+
 			send_mail.delay(**params)
 
-			return JsonResponse(context)
+
+
+			return JsonResponse({'message': 'Email sent'})
 		
 		except Exception as e:
 			return HttpResponseNotFound(str(e))
